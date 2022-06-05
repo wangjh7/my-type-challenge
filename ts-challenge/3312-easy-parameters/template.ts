@@ -1,0 +1,1 @@
+type MyParameters<T extends (...args:unknown[])=> unknown> = [...args]
