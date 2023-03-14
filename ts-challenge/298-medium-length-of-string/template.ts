@@ -1,0 +1,1 @@
+type LengthOfString<S extends string,Arr extends unknown[] = []> = S extends `${infer F}${infer Rest}` ? LengthOfString<Rest,[...Arr,F]> : Arr['length']
